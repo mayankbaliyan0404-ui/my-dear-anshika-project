@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Anshika</title>
+    <style>
+        /* This is the CSS (styling) section */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fce4ec; /* Light pink background */
+            color: #4a4a4a;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Ensures it covers the full screen height */
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            color: #d81b60; /* Deep rose color */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for images */
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .image-box {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.05);
+        }
+
+        .apology-message {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 3px solid #ffccbc; /* Light peach separator */
+            animation: slideUp 2s ease-out 1s forwards; /* Delayed animation */
+            opacity: 0; /* Starts invisible */
+        }
+
+        .apology-text {
+            color: #d81b60;
+            font-size: 2.2em;
+            font-weight: bold;
+            line-height: 1.3;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Keyframe animations for a nice entry effect */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .content-grid {
+                grid-template-columns: 1fr; /* Stack images on small screens */
+            }
+            .header {
+                font-size: 1.8em;
+            }
+            .apology-text {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Thinking of you, Anshika...</div>
+
+        <div class="content-grid">
+            <div class="image-box">
+                <img src="https://media.istockphoto.com/id/1322372574/photo/tulips-and-windmill-during-sunrise.jpg?s=612x612&w=0&k=20&c=WTgANYSLlG9wa2pE51JzftLyTJ8Od1W3sz97gMudCsg=" alt="Tulips flowers">
+            </div>
+            
+            <div class="image-box">
+                <img src="https://cutiedp.com/wp-content/uploads/2025/07/cute-puppy-dp-21.webp" alt="Cute puppy">
+            </div>
+
+            <div class="image-box">
+                <img src="https://img.freepik.com/free-photo/fluffy-toy-texture-close-up_23-2149686919.jpg" alt="Soft Toys">
+            </div>
+
+            <div class="image-box">
+                <img src="https://1stpetvet.com/wp-content/uploads/Introducing-a-New-Kitten.jpg" alt="Kitten">
+            </div>
+
+            <div class="image-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sW3Q80IY2x_ab2LTXX9pMaYg52HdmExzVQ&s" alt="Birds">
+            </div>
+            
+            <div class="image-box">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fsmall-pink-pig-holding-heart-cute-expression-soft-background.html&psig=AOvVaw33QUUJ8QQ8knR63K-ijJp9&ust=1760631242032000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCsv9XMppADFQAAAAAdAAAAABAE" alt="Cute Pink">
+            </div>
+        </div>
+
+        <div class="apology-message">
+            <div class="apology-text">
+                I messed up big time. I am so <br> incredibly sorry, *Anshi*.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
